@@ -15,8 +15,8 @@ TraPla web app at <https://maarango.github.io/trapla-docs/app/>
   from Health Connect, are never uploaded to it.
 - If you use the **AI coach**, the data needed for your request is sent to
   the AI provider (Anthropic or Google) to produce an answer.
-- If you connect **Strava** or **Garmin Connect**, TraPla downloads your data
-  from them.
+- If you connect **Garmin Connect**, TraPla downloads your data from it.
+- TraPla does not connect to Strava. See [Strava](#strava) below.
 - TraPla has no advertising, no analytics and no crash reporting. Your data
   is not sold and is not used for advertising.
 
@@ -36,7 +36,7 @@ What is stored on the server:
   the account service.
 - **Activities:** date, sport, distance, duration, calories, average and
   maximum heart rate, pace, power, elevation gain, and treadmill incline.
-  This includes activities from Strava and Garmin Connect, and activities you
+  This includes activities from Garmin Connect, and activities you
   added or imported yourself. No GPS tracks or locations are stored.
 - **Training plans** you create, import or edit.
 - **Your profile:** sex, date of birth, resting and maximum heart rate,
@@ -44,7 +44,7 @@ What is stored on the server:
 
 What is **not** uploaded: daily wellness readings (sleep, HRV, resting heart
 rate, weight, stress, Body Battery, steps), workouts known only through
-Health Connect, and your Strava, Garmin or AI keys and tokens. These stay on
+Health Connect, and your Garmin or AI keys and tokens. These stay on
 the phone.
 
 A phone holds one person's data, so it can only be linked to one account.
@@ -77,12 +77,14 @@ built-in speech recognition. Depending on your phone's settings, the speech
 service (usually Google) may process your voice to turn it into text. TraPla
 receives only the text and does not record or keep audio.
 
-### 3. Strava (optional)
+### 3. Strava
 
-When you connect Strava, you sign in on Strava's own page, and TraPla then
-downloads your activities from `strava.com`. TraPla keeps the Strava login
-tokens on your phone, in encrypted storage. See Strava's
-[Privacy Policy](https://www.strava.com/legal/privacy).
+TraPla no longer connects to Strava, and it has deleted the Strava data it
+held. Version 1.7.1 and later remove TraPla's Strava connection, revoke
+TraPla's access on Strava when they can, and delete every activity that came
+from Strava from the phone. Strava activities synced to a TraPla account
+are deleted from the server too. If the Strava app writes your workouts to Health Connect,
+TraPla reads them there like any other Health Connect data.
 
 ### 4. Garmin Connect (optional)
 
@@ -121,21 +123,21 @@ Data read from Health Connect:
 - is never sold, never used for advertising, and never shared with anyone
   else.
 
-TraPla's use of information received from Health Connect follows the
-[Health Connect Permissions policy](https://support.google.com/googleplay/android-developer/answer/12991134),
-including its Limited Use requirements.
+TraPla's use of information received from Health Connect is meant to follow
+Google Play's
+[health permissions policy](https://support.google.com/googleplay/android-developer/answer/12991134).
 
 ## Other permissions
 
 | Permission | Why |
 |---|---|
-| Internet | To sync your account and to talk to Strava, Garmin and the AI providers when you use them |
+| Internet | To sync your account and to talk to Garmin and the AI providers when you use them |
 | Microphone (`RECORD_AUDIO`) | Only while you use voice input in the coach chat, as described above |
 
 ## Storage on your device
 
 - On Android, a database on the phone holds your activities, plans, profile
-  and daily wellness readings. Encrypted storage holds your Strava and Garmin
+  and daily wellness readings. Encrypted storage holds your Garmin
   tokens, any AI keys you entered, and your account session.
 - In the web app, the browser stores your synced data and account session.
   When a different account signs in, the browser's copy is cleared. If you
@@ -146,7 +148,7 @@ including its Limited Use requirements.
 - **Export backup** (Android) writes a JSON file to a place you choose. It is
   not sent to us.
 - **Delete all activities** (Android) clears your activities on the phone.
-- **Disconnect Strava or Garmin** removes their tokens from the phone.
+- **Disconnect Garmin** removes its tokens from the phone.
 - **Delete account:** sign in, then open **Settings → TraPla account →
   Delete account**, on the phone or in the web app at
   <https://maarango.github.io/trapla-docs/app/>. This deletes your account
