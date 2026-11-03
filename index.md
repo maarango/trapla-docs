@@ -16,7 +16,7 @@ TraPla web app at <https://maarango.github.io/trapla-docs/app/>
 - If you use the **AI coach**, the data needed for your request is sent to
   the AI provider (Anthropic or Google) to produce an answer.
 - If you connect **Garmin Connect**, TraPla downloads your data from it.
-- TraPla does not connect to Strava. See [Strava](#strava) below.
+- TraPla does not connect to Strava. See [Strava](#3-strava) below.
 - TraPla has no advertising, no analytics and no crash reporting. Your data
   is not sold and is not used for advertising.
 
