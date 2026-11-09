@@ -121,10 +121,10 @@ reads only and never writes to Health Connect.
 
 | Permission | What TraPla uses it for |
 |---|---|
-| Exercise, distance, steps, calories (active and total) | Your activity history and training load |
+| Exercise, distance, steps, total calories burned | Your activity history and training load |
 | Heart rate, resting heart rate, heart rate variability | Training load, heart-rate zones and Readiness |
 | Sleep | Readiness and recovery |
-| Weight, body fat, lean body mass | Your wellness history and the AI coach's context |
+| Weight | Your wellness history and the AI coach's context |
 
 Data read from Health Connect:
 
