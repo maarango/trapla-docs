@@ -1,12 +1,12 @@
 {
-    "name": "training_app_mobile",
-    "short_name": "training_app_mobile",
+    "name": "TraPla",
+    "short_name": "TraPla",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
+    "background_color": "#0A0A0A",
+    "theme_color": "#0A0A0A",
+    "description": "Your TraPla training plans and activities, in sync with the Android app.",
+    "orientation": "any",
     "prefer_related_applications": false,
     "icons": [
         {

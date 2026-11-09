@@ -23,7 +23,8 @@
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="training_app_mobile">
+  <meta name="apple-mobile-web-app-title" content="TraPla">
+  <meta name="theme-color" content="#0A0A0A">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -31,8 +32,20 @@
 
   <title>TraPla</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    /* Dark from the first paint, with the name showing while the app loads,
+       instead of a white page. Flutter replaces it once it starts. */
+    html, body { margin: 0; height: 100%; background: #0A0A0A; }
+    #loading {
+      position: fixed; inset: 0; display: flex; align-items: center;
+      justify-content: center; gap: 12px; color: #E5E2E1;
+      font: 800 22px system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    #loading img { width: 36px; height: 36px; border-radius: 8px; }
+  </style>
 </head>
 <body>
+  <div id="loading"><img src="icons/Icon-192.png" alt="">TraPla</div>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
@@ -41,6 +54,12 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('loading');
+      if (el) el.remove();
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

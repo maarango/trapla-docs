@@ -1,6 +1,6 @@
 # TraPla — Privacy Policy
 
-**Effective date:** 2026-11-02
+**Effective date:** 2026-11-08
 **App:** TraPla for Android (`com.miguelarango.training_app_mobile`) and the
 TraPla web app at <https://maarango.github.io/trapla-docs/app/>
 **Developer:** Miguel Arango
@@ -16,6 +16,8 @@ TraPla web app at <https://maarango.github.io/trapla-docs/app/>
 - If you use the **AI coach**, the data needed for your request is sent to
   the AI provider (Anthropic or Google) to produce an answer.
 - If you connect **Garmin Connect**, TraPla downloads your data from it.
+- If you ask to **join the Android test** from the web app, the details you
+  type are emailed to TraPla through Web3Forms.
 - TraPla does not connect to Strava. See [Strava](#3-strava) below.
 - TraPla has no advertising, no analytics and no crash reporting. Your data
   is not sold and is not used for advertising.
@@ -100,6 +102,16 @@ The web app is served by GitHub Pages, which may log technical details such
 as your IP address. See
 [GitHub's Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 
+### 6. Tester requests (web app, optional)
+
+The web app lets you ask to join the TraPla Android test on Google Play. When
+you send that form, it goes through [Web3Forms](https://web3forms.com/privacy),
+a form-to-email service, which emails it to TraPla's inbox
+(traplaapp@gmail.com). The email contains the name, email address and optional
+message you typed, the app's language and, if you are signed in, your TraPla
+account's email address. It is used only to add you to the test and to reply
+to you.
+
 ## Health Connect
 
 TraPla reads data from Android Health Connect only after you grant
@@ -162,6 +174,9 @@ Google Play's
 
 Synced data is kept for as long as your account exists, and is deleted when
 you delete the account. TraPla keeps no backups of it on other servers.
+
+Tester requests are kept in TraPla's inbox while you are in the test or the
+request is open. Ask at the contact address below to have yours deleted.
 
 ## Security
 
